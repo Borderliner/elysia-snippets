@@ -1,0 +1,58 @@
+{
+    "Create Elysia empty controller" : {
+      "prefix": "elyctrl",
+      "body": [
+        "import { Elysia } from 'elysia'",
+        "",
+        "export ${1:Name}Controller = new Elysia({ name: 'Controller.${1:Name}' })"
+      ],
+      "description": "export ExampleController = new Elysia({ name: 'Controller.Example' })"
+    },
+    "Create Elysia rest CRUD controller": {
+        "prefix": "elycrud",
+        "body": [
+            "import { Elysia, t } from 'elysia'",
+            "",
+            "export ${1:Name}Controller = new Elysia({ name: 'Controller.${1:Name}', prefix: '/${2:names}' })",
+            "\t.get('/', () => {",
+            "\t\t${0}",
+            "\t})",
+            "\t.get('/:id', ({ params: { id } }) => {",
+            "\t\t",
+            "\t}, {",
+            "\t\tparams: t.Object({",
+            "\t\t\tid: t.Number()",
+            "\t\t})",
+            "\t})",
+            "\t.post('/', ({ body }) => {",
+            "\t\t",
+            "\t}, { body: t.Any() })",
+            "\t.put('/:id', ({ body, params: { id } }) => {",
+            "\t\t",
+            "\t}, {",
+            "\t\tparams: t.Object({",
+            "\t\t\tid: t.Number()",
+            "\t\t}),",
+            "\t\tbody: t.Any()",
+            "\t})",
+            "\t.delete('/:id', ({ params: { id } }) => {",
+            "\t\t",
+            "\t}, {",
+            "\t\tparams: t.Object({",
+            "\t\t\tid: t.Number()",
+            "\t\t})",
+            "\t})"
+        ]
+    },
+    "Create Elysia model": {
+        "prefix": "elymod",
+        "body": [
+            "import { Elysia, t } from 'elysia'",
+            "",
+            "export ${1:Name}Model = new Elysia({ name: 'Model.${1:Name}' })",
+            "\t.model(t.Object({",
+            "\t\t${0}",
+            "\t})"
+        ]
+    }
+}
