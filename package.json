@@ -1,8 +1,9 @@
 {
   "name": "elysia-snippets",
-  "displayName": "elysia-snippets",
-  "description": "Quick and useful ElysiaJs snippets",
+  "displayName": "Elysia Snippets",
+  "description": "Quick and useful ElysiaJS snippets",
   "version": "0.1.0",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.94.0"
   },
