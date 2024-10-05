@@ -3,7 +3,7 @@
   "displayName": "Elysia Snippets",
   "description": "Quick and useful ElysiaJS snippets",
   "version": "0.1.0",
-  "icon": "icon.png",
+  "icon": "icon.jpg",
   "engines": {
     "vscode": "^1.94.0"
   },
