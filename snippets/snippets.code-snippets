@@ -4,7 +4,7 @@
       "body": [
         "import { Elysia } from 'elysia'",
         "",
-        "export ${1:Name}Controller = new Elysia({ name: 'Controller.${1:Name}' })"
+        "export const ${1:Name}Controller = new Elysia({ name: 'Controller.${1:Name}' })"
       ],
       "description": "export ExampleController = new Elysia({ name: 'Controller.Example' })"
     },
@@ -13,7 +13,7 @@
         "body": [
             "import { Elysia, t } from 'elysia'",
             "",
-            "export ${1:Name}Controller = new Elysia({ name: 'Controller.${1:Name}', prefix: '/${2:names}' })",
+            "export const ${1:Name}Controller = new Elysia({ name: 'Controller.${1:Name}', prefix: '/${2:names}' })",
             "\t.get('/', () => {",
             "\t\t${0}",
             "\t})",
@@ -49,7 +49,7 @@
         "body": [
             "import { Elysia, t } from 'elysia'",
             "",
-            "export ${1:Name}Model = new Elysia({ name: 'Model.${1:Name}' })",
+            "export const ${1:Name}Model = new Elysia({ name: 'Model.${1:Name}' })",
             "\t.model(t.Object({",
             "\t\t${0}",
             "\t})"
