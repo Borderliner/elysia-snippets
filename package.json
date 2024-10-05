@@ -7,6 +7,9 @@
   "engines": {
     "vscode": "^1.94.0"
   },
+  "repository": {
+    "url": "https://github.com/Borderliner/elysia-snippets"
+  },
   "author": {
     "name": "Mohammadreza Hajianpour",
     "email": "hajianpour.mr@gmail.com"
